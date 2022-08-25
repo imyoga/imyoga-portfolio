@@ -1,0 +1,13 @@
+:root {
+  /* light theme */
+  --background-light-mode: #f4f4f4;
+  --font-color-light-mode: #1a1c20;
+  --acccent-color-light-mode: #f0a500;
+
+  /* dark theme */
+  --background-dark-mode: #1a1c20;
+  --font-color-dark-mode: #f4f4f4;
+  --acccent-color-dark-mode: #cf7500;
+}
+
+
