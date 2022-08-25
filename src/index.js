@@ -15,11 +15,3 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 //reportWebVitals();
 
-
-// //<BrowserRouter>
-// <Routes>
-// <Route exact path="/" element={<App />} />
-// <Route exact path="/thankyou" element={<Thankyou />} />
-// <Route path="*" element={<NotFound />} />
-// </Routes>
-// </BrowserRouter>
