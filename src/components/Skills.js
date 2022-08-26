@@ -1,92 +1,63 @@
 import React from 'react';
 import Image from './Image';
+import { frontEnd, backEnd, tools } from './skill-list';
+import './Skills.css';
 
-//Front End images
-import javascript from '../images/javascript.png';
-import react from '../images/react.png';
-import redux from '../images/redux.png';
-import html5 from '../images/html5.png';
-import css from '../images/css.png';
-import sass from '../images/sass.png';
-
-//Back End images
-import node from '../images/node.png';
-import express from '../images/express.png';
-import restfulapi from '../images/restfulapi.png';
-import mysql from '../images/mysql.png';
-
-//Tools images
-import agile3 from '../images/agile3.png';
-import git from '../images/git.png';
-import module from '../images/module.png';
-import npm from '../images/npm.png';
-import aws from '../images/aws.png';
-
-let frontEnd = [
-  [javascript, 'JavaScript'],
-  [react, 'React'],
-  [redux, 'Redux'],
-  [html5, 'HTML'],
-  [css, 'CSS'],
-  [sass, 'SASS'],
-];
-
-let backEnd = [
-  [node, 'Node'],
-  [express, 'Express'],
-  [restfulapi, 'REST api'],
-  [mysql, 'MySql'],
-];
-
-let tools = [
-  [git, 'Git'],
-  [agile3, 'Agile'],
-  [module, 'Webpack'],
-  [npm, 'Npm'],
-  [aws, 'AWS'],
-];
-const Skills = () => {
+const Skills = (props) => {
   return (
-    <div id="Skills" className="container-skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>
-          <div>Front End</div>
-        </li>
-        {frontEnd.map((skill, index) => {
-          return (
-            <li key={index}>
-              <Image imageName={skill[0]} imageLabel={skill[1]} />{' '}
-            </li>
-          );
-        })}
-      </ul>
+    <div id={props.id} className="container-skills">
+      <h2 className="title-skill">Skills</h2>
+      <p className="title-quote">“Building my skills, Not resume”</p>
 
-      <ul>
-        <li>
-          <div>Back End</div>
-          {backEnd.map((skill, index) => {
-            return (
-              <li key={index}>
-                <Image imageName={skill[0]} imageLabel={skill[1]} />{' '}
-              </li>
-            );
-          })}
-        </li>
-      </ul>
+      <div className="container-cards-skills">
+        <ul className="card-skills">
+          <li>
+            <div className="title-card">Front End</div>
+          </li>
+          <ul className="container-skill-items">
+            {frontEnd.map((skill, index) => {
+              return (
+                <li key={index} className="container-skill-name-image">
+                  <Image imageName={skill[0]} className="image-skill" />
+                  <div className="title-skill-image">{skill[1]}</div>
+                </li>
+              );
+            })}
+          </ul>
+        </ul>
 
-      <ul>
-        <li>
-          <div>Tools</div>
-        </li>
-        {tools.map((skill, index) => {
-          return (
-            <li key={index}>
-              <Image imageName={skill[0]} imageLabel={skill[1]} />{' '}
-            </li>
-          );
-        })}
-      </ul>
+        <ul className="card-skills">
+          <li>
+            <div className="title-card">Tools</div>
+          </li>
+          <ul className="container-skill-items">
+            {tools.map((skill, index) => {
+              return (
+                <li key={index} className="container-skill-name-image">
+                  <Image imageName={skill[0]} className="image-skill" />
+                  <div className="title-skill-image">{skill[1]}</div>
+                </li>
+              );
+            })}
+          </ul>
+        </ul>
+
+        <ul className="card-skills">
+          <li>
+            <div className="title-card">Back End</div>
+          </li>
+          <ul className="container-skill-items">
+            {backEnd.map((skill, index) => {
+              return (
+                <li key={index} className="container-skill-name-image">
+                  <Image imageName={skill[0]} className="image-skill" />
+                  <div className="title-skill-image">{skill[1]}</div>
+                </li>
+              );
+            })}
+          </ul>
+        </ul>
+      </div>
     </div>
   );
 };

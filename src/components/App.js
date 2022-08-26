@@ -3,14 +3,16 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Thankyou from './Thankyou';
 import NotFound from './NotFound';
-import Contact from './Contact';
 import Hero from './Hero';
-import About from './About';
-import Projects from './Projects';
 import Skills from './Skills';
+import Projects from './Projects';
+import About from './About';
+import Contact from './Contact';
 import './App.css';
+import ToTheTop from './ToTheTop';
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Routes>
@@ -21,11 +23,12 @@ function App() {
             <div className="container-app">
               <Navbar id={'Navbar'} />
               <Hero id={'Hero'} />
-              <About id={'About'} />
               <Skills id={'Skills'} />
               <Projects id={'Projects'} />
+              <About id={'About'} />
               <Contact id={'Contact'} />
               <Footer id={'Footer'} />
+              <ToTheTop id={'ToTheTop'} />
             </div>
           }
         />

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import * as Scroll from 'react-scroll';
+import './Navbar';
 
 const ScrollLink = (props) => {
   return (
@@ -10,7 +11,7 @@ const ScrollLink = (props) => {
       to={props.scrollTo}
       spy={true}
       smooth={true}
-      offset={props.offset ?? 50}
+      offset={props.offset ?? -56}
       duration={500}
       onClick={props.scrollToTop === 1 ? () => Scroll.animateScroll.scrollToTop() : null}
     >

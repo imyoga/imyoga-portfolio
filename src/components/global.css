@@ -1,13 +1,17 @@
 :root {
   /* light theme */
-  --background-light-mode: #f4f4f4;
-  --font-color-light-mode: #1a1c20;
-  --acccent-color-light-mode: #f0a500;
+  --background-light-mode: #DDDDDD;
+  --font-color-light-mode: #222831;
+  --acccent-color-light-mode: #30475E;
+  --acccent-2-color-light-mode: #F05454;
+  
 
   /* dark theme */
-  --background-dark-mode: #1a1c20;
-  --font-color-dark-mode: #f4f4f4;
-  --acccent-color-dark-mode: #cf7500;
+  --background-dark-mode: #222831;
+  --font-color-dark-mode: #DDDDDD;
+  --acccent-color-dark-mode: #30475E;
+  --acccent-2-color-dark-mode: #F05454;
+
 }
 
 

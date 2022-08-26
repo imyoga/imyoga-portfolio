@@ -1,0 +1,128 @@
+:root {
+  /* light theme */
+  --background-light-mode: #dddddd;
+  /*rgb(221, 221, 221)*/
+  --font-color-light-mode: #222831;
+  /*rgb(34, 40, 49)*/
+  --acccent-color-light-mode: #30475e;
+  /*rgb(48, 71, 94)*/
+  --acccent-2-color-light-mode: #f05454;
+  /*rgb(240, 84, 84)*/
+
+  /* dark theme */
+  --background-dark-mode: #222831;
+  --font-color-dark-mode: #dddddd;
+  --acccent-color-dark-mode: #30475e;
+  --acccent-2-color-dark-mode: #f05454;
+}
+
+@import url('./global.css');
+
+/* .container-cards-skills * {
+  outline: 1px solid red;
+ 
+} */
+
+.container-skills {
+  height: calc(100vh - 3.5rem);
+  width: 100vw;
+
+  background-color: var(--acccent-color-light-mode);
+  color: var(--background-light-mode);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-skill {
+  margin-top: 0;
+  font-size: 3rem;
+  text-shadow: 1px 2px 3px var(--font-color-light-mode);
+}
+
+.title-quote {
+  transform: translate(0, -40px);
+  font-style: italic;
+  font-size: 1.8rem;
+}
+
+.container-cards-skills {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: var(--font-color-light-mode);
+  transform: translate(0, -20px);
+}
+
+
+.card-skills {
+  background-color: var(--background-light-mode);
+  box-shadow: rgb(34, 40, 49, 0.7) 0px 7px 29px 0px;
+
+  border: 1px solid var(--font-color-light-mode);
+  border-radius: 10px;
+
+  margin-inline: 20px;
+
+  height: 20rem;
+  width: 23rem;
+
+  
+
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  
+  padding: 0;
+  row-gap: 2rem;
+
+  list-style-type: none;
+  transition: transform 0.5s;
+
+}
+.card-skills:hover{
+  transform: scale(0.99 , 0.99);
+}
+
+.title-card {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 15px;
+
+  
+}
+
+.container-skill-items {
+  /* background-color: #f05454; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+  row-gap: 2rem;
+  height: 60%;
+  width: 90%;
+  
+
+}
+
+.container-skill-name-image {
+  /* background-color: white;
+  outline: 1px solid grey; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: max-content;
+  flex: 1 0 30%;
+}
+
+.image-skill:hover{
+  transform: translate(0, -40px);
+
+}
+

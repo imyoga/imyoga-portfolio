@@ -1,0 +1,17 @@
+.to-the-top {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 2rem;
+  float: right;
+  position: fixed;
+  right: 0;
+  bottom: 10vh;
+  color: white;
+  background-color: rgba(50, 50, 50, 0.5);
+  border-radius: 5px 0 0 5px;
+  text-align: center;
+}
+.to-the-top:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

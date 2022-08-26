@@ -1,0 +1,21 @@
+:root {
+  /* light theme */
+  --background-light-mode: #f4f4f4;
+  --font-color-light-mode: #1a1c20;
+  --acccent-color-light-mode: #f0a500;
+  /* dark theme */
+  --background-dark-mode: #1a1c20;
+  --font-color-dark-mode: #f4f4f4;
+  --acccent-color-dark-mode: #cf7500;
+}
+
+@import url('/src/components/global.css');
+
+.container-about {
+  height: calc(100vh - 3.5rem);
+  width: 100wh;
+  color: var(--background-light-mode);
+
+  background-color: #02aab0;
+  background-image: linear-gradient(135deg,#02aab0,#00cdac);
+}

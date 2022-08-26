@@ -3,34 +3,39 @@ import ScrollLink from './ScrollLink.js';
 import home from '../images/home-icon.png';
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return (
-    <div className="container-navbar">
+    <div id={props.id} className={`container-navbar`}>
       <ScrollLink classes={`nav-link flex-item home-icon-container`} scrollToTop={1}>
         <img className="home-icon" src={home} alt="home-icon" width={50} height={50} />
       </ScrollLink>
 
       <div className="flex-item container-navlinks">
+      
         <div>
-          <ScrollLink scrollTo="About" classes={`nav-link`}>
-            About
-          </ScrollLink>
-        </div>
-        <div>
-          <ScrollLink scrollTo="Skills" classes={`nav-link`}>
+          <ScrollLink scrollTo="Skills" classes={`nav-link`} >
             Skills
           </ScrollLink>
         </div>
+
         <div>
           <ScrollLink scrollTo="Projects" classes={`nav-link`}>
             Projects
           </ScrollLink>
         </div>
+
+        <div>
+          <ScrollLink scrollTo="About" classes={`nav-link`}>
+            About
+          </ScrollLink>
+        </div>        
+
         <div>
           <ScrollLink scrollTo="Contact" classes={`nav-link`}>
             Contact
           </ScrollLink>
         </div>
+
         <div>
           <a
             className="nav-link"

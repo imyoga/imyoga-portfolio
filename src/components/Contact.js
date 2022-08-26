@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Form = () => {
+const Form = (props) => {
     return (
-        <div id="Contact" className='container-contact'>
+        <div id={props.id} className='container-contact'>
             <p>Thank you for reviewing my portfolio.</p>
             <h2>Contact Me</h2>
 

@@ -1,0 +1,68 @@
+:root {
+  /* light theme */
+  --background-light-mode: #dddddd;
+  --font-color-light-mode: #222831;
+  --acccent-color-light-mode: #30475e;
+  --acccent-2-color-light-mode: #f05454;
+
+  --linear-gradient-text: linear-gradient(to right, #30475e, #f05454);
+
+  /* dark theme */
+  --background-dark-mode: #222831;
+  --font-color-dark-mode: #dddddd;
+  --acccent-color-dark-mode: #30475e;
+  --acccent-2-color-dark-mode: #f05454;
+
+  /* Font Size */
+  --font-xxl: 2rem;
+  --font-xl: 1.5rem;
+  --font-lg: 1.25rem;
+  --font-md: 1rem;
+  --font-sm: 0.75rem;
+}
+
+@import url('./global.css');
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  margin-top: 3.5rem;
+  background: var(--background-light-mode);
+  height: calc(100vh - 3.5rem);
+
+  font-size: 2.5rem;
+}
+
+.hero-titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name-heading {
+  /* Order of these below lines matters */
+  background: var(--linear-gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Tangerine';
+  font-family: 'Dancing Script';
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.title-heading {
+  font-size: 2.2rem;
+}
+.avatar{
+  transition: transform 2s;
+}
+.avatar:hover{
+  /* transition: width 2s; */
+  transform: scale(1.25);
+}

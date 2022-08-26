@@ -1,30 +1,45 @@
 :root {
   /* light theme */
-  --background-light-mode: #f4f4f4;
-  --font-color-light-mode: #1a1c20;
-  --acccent-color-light-mode: #f0a500;
+  --background-light-mode: #DDDDDD;
+  --font-color-light-mode: #222831;
+  --acccent-color-light-mode: #30475E;
+  --acccent-2-color-light-mode: #F05454;
+  
+
   /* dark theme */
-  --background-dark-mode: #1a1c20;
-  --font-color-dark-mode: #f4f4f4;
-  --acccent-color-dark-mode: #cf7500;
+  --background-dark-mode: #222831;
+  --font-color-dark-mode: #DDDDDD;
+  --acccent-color-dark-mode: #30475E;
+  --acccent-2-color-dark-mode: #F05454;
+
 }
+
+
 
 @import url('./global.css');
-.container-navbar * {
-  border: 1px solid grey;
-}
 
+/* .container-navbar {
+  border: 1px solid grey;
+} */
+ 
 .container-navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background: var(--acccent-color-light-mode);
   width: 100%;
   height: 3.5rem;
   font-size: 1.7rem;
   font-weight: 600;
   position: fixed;
   top: 0;
+  z-index: 100;
+  box-shadow: 5px 1px 10px 0px rgba(0 0 0 / 30%);
+  transition: transform 1s;
+}
+.container-navbar:hover{
+  transform: scale(1.006);
 }
 
 .flex-item {
@@ -39,14 +54,15 @@
 }
 
 .container-navlinks div {
-  margin-right: 15px;
+  margin-right: 25px;
   align-self: center;
+  flex: 1;
 }
 
 .nav-link:hover {
-  color: var(--acccent-color-dark-mode);
-  text-decoration: underline;
+  color: var(--acccent-2-color-light-mode);
   cursor: pointer;
+  
 }
 
 .container-navbar a {
@@ -54,10 +70,10 @@
 }
 
 /* Link animation hover  */
-.nav-link {
+.nav-link{
   display: inline-block;
   position: relative;
-  color: var(--acccent-color-light-mode);
+  color: var(--font-color-dark-mode);
 }
 
 .nav-link:after {
@@ -68,21 +84,25 @@
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: var(--acccent-color-dark-mode);
+  background-color: var(--acccent-2-color-light-mode);
   transform-origin: bottom right;
-  transition: transform 0.05s ease-out;
+  transition: transform 0.25s ease-out;
 }
-
 
 .nav-link:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-
 /* End */
+
 
 .home-icon-container {
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  align-items: center;
+  
+}
+
+.active{
+  color:var(--acccent-2-color-light-mode);
 }

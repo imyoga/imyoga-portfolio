@@ -1,18 +1,22 @@
 import React from 'react';
 import { ReactComponent as ImportedAvatar } from '../images/avatar.svg';
+import './Hero.css'
 
 
-const Hero = () => {
+const Hero = (props) => {
   return (
-    <div className="hero">
-      <div >
-        <h1>
+    <div id={props.id} className="container-hero">
+      <div className='hero-titles'>
+
+        <h2>
           👋Hi, I'm <span className="name-heading">Yogesh Moradiya.</span>
-        </h1>
-        <h2>I build things for web.</h2>
+        </h2>
+
+        <p className='title-heading'>I design and build things for web.</p>
+
       </div>
 
-      <div><ImportedAvatar /></div>
+      <div className='avatar'><ImportedAvatar /></div>
     </div>
   );
 };

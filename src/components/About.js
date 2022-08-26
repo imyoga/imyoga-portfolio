@@ -1,8 +1,11 @@
 import React from 'react';
+import './About.css'
 
-const About = () => {
+
+const About = (props) => {
   return (
-    <div id='About'>
+    <div id={props.id} className='container-about'>
+    <h2>ABOUT</h2>
       <p>
         I’m a Web Developer specializing in building (and occasionally designing)
         exceptional digital experiences. Currently, I'm focused on building accessible,

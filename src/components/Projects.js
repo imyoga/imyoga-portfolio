@@ -68,9 +68,9 @@ let projects = [
   },
 ];
 
-const Projects = () => {
+const Projects = (props) => {
   return (
-    <div id='Projects'>
+    <div id={props.id}>
       <h1>My Recent Work</h1>
       <p>Here are a few most recent projects I've contributed to.</p>
       <ul>
