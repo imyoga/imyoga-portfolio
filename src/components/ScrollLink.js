@@ -4,6 +4,18 @@ import * as Scroll from 'react-scroll';
 import './Navbar';
 
 const ScrollLink = (props) => {
+
+  // console.log(props);
+
+  function clickHandler() {
+    // console.log("clicked on scroll link");
+    props.ontoggle();
+
+    if (props.scrollToTop === 1) {
+      Scroll.animateScroll.scrollToTop();
+    } 
+  }
+
   return (
     <Link
       activeClass="active"
@@ -13,7 +25,7 @@ const ScrollLink = (props) => {
       smooth={true}
       offset={props.offset ?? -56}
       duration={500}
-      onClick={props.scrollToTop === 1 ? () => Scroll.animateScroll.scrollToTop() : null}
+      onClick={clickHandler}
     >
       {props.children}
     </Link>
@@ -21,3 +33,5 @@ const ScrollLink = (props) => {
 };
 
 export default ScrollLink;
+
+//  props.scrollToTop === 1 ? ()=> Scroll.animateScroll.scrollToTop() : null

@@ -22,9 +22,8 @@
 }
 
 @import url('./global.css');
-@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
 
 .container-hero {
   display: flex;
@@ -54,15 +53,63 @@
   font-family: 'Dancing Script';
   font-size: 4rem;
   font-weight: 900;
+  z-index: 1;
 }
+
+/* Animation Heading Name  */
+.name-heading {
+  animation: fadeInAnimation ease 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Animation Heading Name End */
 
 .title-heading {
   font-size: 2.2rem;
 }
-.avatar{
+
+.avatar {
+  position: relative;
+  animation: fadeInLeft 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0.5;
+    transform: translateX(100vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.avatar {
+  z-index: 1;
   transition: transform 2s;
 }
-.avatar:hover{
-  /* transition: width 2s; */
+
+.avatar:hover {
+  transition: width 2s;
   transform: scale(1.25);
+}
+
+.hero-background {
+  background: var(--acccent-color-light-mode);
+  /* background-color: red; */
+  /* outline: 1px solid grey; */
+  width: 100vw;
+  height: 16vh;
+  position: absolute;
+  bottom: 0px;
+  z-index: 0;
 }

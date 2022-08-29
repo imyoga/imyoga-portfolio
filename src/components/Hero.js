@@ -17,6 +17,7 @@ const Hero = (props) => {
       </div>
 
       <div className='avatar'><ImportedAvatar /></div>
+      <div className='hero-background'></div>
     </div>
   );
 };

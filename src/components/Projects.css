@@ -1,0 +1,25 @@
+@import url('./global.css');
+:root {
+    /* light theme */
+    --background-light-mode: #DDDDDD;
+    --font-color-light-mode: #222831;
+    --acccent-color-light-mode: #30475E;
+    --acccent-2-color-light-mode: #F05454;
+    
+  
+    /* dark theme */
+    --background-dark-mode: #222831;
+    --font-color-dark-mode: #DDDDDD;
+    --acccent-color-dark-mode: #30475E;
+    --acccent-2-color-dark-mode: #F05454;
+  
+  }
+  
+
+  .container-projects{
+    outline: 1px solid grey;
+    background-color: bisque;
+    max-width: 70vw;
+  }
+  
+  

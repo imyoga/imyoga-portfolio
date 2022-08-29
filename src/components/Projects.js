@@ -1,5 +1,6 @@
 import React from 'react';
 import ProjectBuilder from './ProjectBuilder';
+import './Projects.css'
 
 let projects = [
   {
@@ -50,7 +51,7 @@ let projects = [
       'Source Code',
       'https://github.com/imyoga/super-market-react18',
     ],
-    embedId: 'AHZc1VqfW_Y',
+    embedId: 'M4HztWPzEmY',
   },
   {
     title: 'My Bank',
@@ -64,21 +65,21 @@ let projects = [
       'Source Code',
       'https://github.com/imyoga/my-bank',
     ],
-    embedId: 'AHZc1VqfW_Y',
+    embedId: 'Xd8AxLZr-88',
   },
 ];
 
 const Projects = (props) => {
   return (
-    <div id={props.id}>
+    <div id={props.id} className='container-projects'>
       <h1>My Recent Work</h1>
       <p>Here are a few most recent projects I've contributed to.</p>
       <ul>
-        <ProjectBuilder className="project" project={projects[0]} />
-        <ProjectBuilder className="project" project={projects[1]} />
-        <ProjectBuilder className="project" project={projects[2]} />
-        <ProjectBuilder className="project" project={projects[3]} />
-        <ProjectBuilder className="project" project={projects[4]} />
+        <ProjectBuilder className="container-each-project" project={projects[0]} />
+        <ProjectBuilder className="container-each-project" project={projects[1]} />
+        <ProjectBuilder className="container-each-project" project={projects[2]} />
+        <ProjectBuilder className="container-each-project" project={projects[3]} />
+        <ProjectBuilder className="container-each-project" project={projects[4]} />
       </ul>
     </div>
   );
