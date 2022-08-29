@@ -1,0 +1,32 @@
+:root {
+    /* light theme */
+    --background-light-mode: #DDDDDD;
+    --font-color-light-mode: #222831;
+    --acccent-color-light-mode: #30475E;
+    --acccent-2-color-light-mode: #F05454;
+    
+  
+    /* dark theme */
+    --background-dark-mode: #222831;
+    --font-color-dark-mode: #DDDDDD;
+    --acccent-color-dark-mode: #30475E;
+    --acccent-2-color-dark-mode: #F05454;  
+  }
+  
+  
+  
+
+@import url(./global.css);
+.embed-youtube *{
+    margin: 0;
+    padding: 0;
+    border: 5px solid var(--acccent-2-color-light-mode);  
+    border-radius: 3px;  
+}
+
+@media (max-width:700px){
+  iframe{
+    width: 300px;
+    height: 168.75px;
+  }
+}

@@ -14,12 +14,37 @@
     --acccent-2-color-dark-mode: #F05454;
   
   }
-  
+
 
   .container-projects{
-    outline: 1px solid grey;
-    background-color: bisque;
+    /* outline: 1px solid grey; */
+    /* background-color: yellowgreen; */
     max-width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 8vh;
+    padding-bottom: 10vh;
   }
+  .title-work{
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px var(--acccent-2-color-light-mode);
+    transition: transform 0.4s;
+    color: var(--font-color-light-mode);
+    margin-top: 25px;
+  }
+  .title-work:hover{
+    transform: scale(1.01 , 1.01);
+  }
+  .description-work{
+  font-size: 1.8rem;
+  }
+ 
   
-  
+  @media (max-width: 700px){
+    .container-projects{
+      width: 100vh;      
+      text-align: center;
+    }
+  }

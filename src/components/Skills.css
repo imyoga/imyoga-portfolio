@@ -17,13 +17,12 @@
 }
 
 @import url('./global.css');
-
-/* .container-cards-skills * {
-  outline: 1px solid red;
- 
+/* .container-skills *{
+  outline: 1px solid yellow;
 } */
 
 .container-skills {
+  
   height: calc(100vh - 3.5rem);
   width: 100vw;
 
@@ -33,17 +32,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.title-skill {
-  margin-top: 0;
+.title-skill {  
   font-size: 3rem;
   text-shadow: 1px 2px 3px var(--font-color-light-mode);
+  transition: transform 0.4s;
 }
-
+.title-skill:hover{
+  transform: scale(1.01 , 1.01);
+}
 .title-quote {
-  transform: translate(0, -40px);
   font-style: italic;
   font-size: 1.8rem;
 }
@@ -55,7 +55,6 @@
   align-items: center;
   justify-content: center;
   color: var(--font-color-light-mode);
-  transform: translate(0, -20px);
 }
 
 
@@ -81,7 +80,7 @@
   row-gap: 2rem;
 
   list-style-type: none;
-  transition: transform 0.2s;
+  transition: transform 0.4s;
 
 }
 .card-skills:hover{
@@ -126,3 +125,22 @@
 
 }
 
+@media (max-width:700px) {
+  .container-skills {
+    height: 200vh;
+  }
+  .title-skill{
+    transform: translate(0px, 20px);
+  }
+  .container-cards-skills{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5vh;
+  }
+  .title-quote {
+    text-align: center;
+  }
+  .card-skills{
+    width: 90vw;
+  }
+}

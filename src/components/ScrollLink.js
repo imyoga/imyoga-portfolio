@@ -8,8 +8,10 @@ const ScrollLink = (props) => {
   // console.log(props);
 
   function clickHandler() {
-    // console.log("clicked on scroll link");
-    props.ontoggle();
+    console.log("clicked on scroll link");
+    if (props.ontoggle){
+      props.ontoggle();
+    }
 
     if (props.scrollToTop === 1) {
       Scroll.animateScroll.scrollToTop();
@@ -34,4 +36,4 @@ const ScrollLink = (props) => {
 
 export default ScrollLink;
 
-//  props.scrollToTop === 1 ? ()=> Scroll.animateScroll.scrollToTop() : null
+

@@ -1,11 +1,11 @@
 import React from 'react';
 import ProjectBuilder from './ProjectBuilder';
-import './Projects.css'
+import './Projects.css';
 
 let projects = [
   {
     title: 'Slynk',
-    description: `A plateform for keeping users' all digital identity in one place while it's linked with digital card. Responsive with all media type with perfect user experience.`,
+    description: `A plateform for keeping users' all digital identity in one place while it's linked with digital card. Responsive with all media type while providing perfect user experience.`,
     technologies: [
       'PWA',
       'React',
@@ -35,7 +35,7 @@ let projects = [
     description: `A marketing website that helps the small business convert visitors into customers.`,
     technologies: ['JavaScript', 'HTML', 'CSS'],
     collobraters: ['Nitin R'],
-    note: `We're adding fetures to this project. It's hosted with AWS and Hostinger.`,
+    note: `We're adding fetures to this project. It's hosted on AWS with Hostinger.`,
     links: ['See Live', 'https://drzio.com/'],
     embedId: 'E2rZpv3i3jE',
   },
@@ -56,7 +56,7 @@ let projects = [
   {
     title: 'My Bank',
     description: `This project has a prototype mode. If you click on a non-clickable area, the clickable areas will flash.`,
-    technologies: ['JavaScript','HTML','CSS'],
+    technologies: ['JavaScript', 'HTML', 'CSS'],
     collobraters: ['N/a'],
     note: `This app is hosted on Github Pages.`,
     links: [
@@ -71,16 +71,16 @@ let projects = [
 
 const Projects = (props) => {
   return (
-    <div id={props.id} className='container-projects'>
-      <h1>My Recent Work</h1>
-      <p>Here are a few most recent projects I've contributed to.</p>
-      <ul>
-        <ProjectBuilder className="container-each-project" project={projects[0]} />
-        <ProjectBuilder className="container-each-project" project={projects[1]} />
-        <ProjectBuilder className="container-each-project" project={projects[2]} />
-        <ProjectBuilder className="container-each-project" project={projects[3]} />
-        <ProjectBuilder className="container-each-project" project={projects[4]} />
-      </ul>
+    <div id={props.id} className="container-projects">
+      <h1 className="title-work">My Recent Work</h1>
+      <p className="description-work">
+        Here are a few most recent projects I've contributed to.
+      </p>
+      <ProjectBuilder project={projects[0]} />
+      <ProjectBuilder project={projects[1]} />
+      <ProjectBuilder project={projects[2]} />
+      <ProjectBuilder project={projects[3]} />
+      <ProjectBuilder project={projects[4]} />
     </div>
   );
 };

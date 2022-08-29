@@ -1,42 +1,42 @@
 import React from 'react';
 import YoutubeEmbed from './YoutubeEmbed';
-
+import './ProjectBuilder.css'
 const ProjectBuilder = (props) => {
   let project = props.project;
 
   return (
-    <li>
-      <div>
-        <h3>{project.title}</h3>
+    <div className='container-project-card'>
+      <div className='container-project-details'>
+        <h3  className='project-title'>{project.title}</h3>
 
-        <ul>
+        <ul className='container-project-technologies'>
           {project.technologies.map((technology, key) => {
             return <li key={key}>{technology}</li>;
           })}
         </ul>
 
-        <div>Collobraters: {project.collobraters}</div>
+        <div  className='container-project-collobraters'><span>Collobraters</span>: {project.collobraters}</div>
 
-        <p>{project.description}</p>
+        <p  className='project-description'>{project.description}</p>
 
-        <p>Note: {project.note}</p>
+        <p className='project-notes'>Note: {project.note}</p>
 
-        <div>
-        
-        <a target="_blank" rel="noreferrer" href={project.links[1]}>
-          {project.links[0]}
-        </a>
-        
-        <a target="_blank" rel="noreferrer" href={project.links[3]}>
-        {project.links[2]}
-        
-        </a>
+        <div className='container-urls'>
+          <a target="_blank" rel="noreferrer" href={project.links[1]}>
+            {project.links[0]}
+          </a>
+
+          {project.links[2] ? <a target="_blank" rel="noreferrer" href={project.links[3]}>
+          {project.links[2]}
+        </a> : null}
         </div>
       </div>
-      <div>
+
+      <div className='container-youtube'>
         <YoutubeEmbed embedId={project.embedId} />
+        <div className='youtube-border'></div>
       </div>
-    </li>
+    </div>
   );
 };
 

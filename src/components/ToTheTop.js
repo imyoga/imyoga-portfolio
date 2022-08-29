@@ -2,7 +2,7 @@ import React from 'react';
 import './ToTheTop.css';
 import ScrollLink from './ScrollLink.js';
 
-const ToTheTop = () => {
+const ToTheTop = (props) => {
   return (
     <ScrollLink scrollToTop={1}>
       {' '}

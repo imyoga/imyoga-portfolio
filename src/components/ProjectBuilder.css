@@ -1,0 +1,131 @@
+:root {
+  /* light theme */
+  --background-light-mode: #dddddd;
+  --font-color-light-mode: #222831;
+  --acccent-color-light-mode: #30475e;
+  --acccent-2-color-light-mode: #f05454;
+
+  /* dark theme */
+  --background-dark-mode: #222831;
+  --font-color-dark-mode: #dddddd;
+  --acccent-color-dark-mode: #30475e;
+  --acccent-2-color-dark-mode: #f05454;
+}
+
+@import url('global.css');
+.container-project-card *{
+    list-style-type: none;
+}
+.container-project-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-shadow: rgb(34, 40, 49, 0.7) 0px 7px 29px 0px;
+  border-radius: 10px;
+  transition: transform 0.4s;
+  
+}
+.title-work:hover{
+    transform: scale(1.01 , 1.01);
+  }
+
+
+.container-project-details {
+  flex: 60%;
+  display: block;
+  text-align: left;
+}
+.container-project-details > * {
+  margin-left: 15px;
+  margin-block: 10px;
+}
+.project-title {
+  font-size: 2rem;
+}
+
+ul.container-project-technologies {
+  max-width: 40ch;
+  display: inline-flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-block: 5px;
+}
+
+ul.container-project-technologies li {
+  border: 2px solid var(--acccent-2-color-light-mode);
+  margin: 5px;
+  border-radius: 5px;
+  padding-block: 1px;
+  padding-inline: 4px;
+  background-color: var(--acccent-color-light-mode);
+  color: var(--font-color-dark-mode);
+}
+
+.container-project-collobraters {
+  font-style: italic;
+}
+.container-project-collobraters span {
+  font-style: normal;
+  font-weight: 600;
+}
+.project-description {
+  max-width: 50ch;
+  font-weight: 500;
+}
+.project-notes {
+  max-width: 50ch;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+.container-urls a {
+  color: var(--font-color-light-mode);
+  background-color: rgb(240, 84, 84, 0.2);
+  border-radius: 5px;
+  padding-inline: 4px;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.container-urls a:hover {
+  color: var(--acccent-2-color-light-mode);
+  
+  
+  
+}
+
+.container-youtube {
+  margin-right: 20px;
+  flex: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+  transition: transform 0.6s;
+
+}
+.container-youtube:hover{
+    transform: rotate(5deg);
+}
+
+
+@media (max-width: 900px) {
+  .container-project-card {
+    display: block;
+    width: 90vw;
+  }
+
+  .container-youtube {
+    margin: auto;
+    display: block;
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  .container-project-details {
+    align-self: center;
+    text-align: center;
+  }
+
+}

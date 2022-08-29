@@ -7,43 +7,43 @@ import './Navbar.css';
 const Navbar = (props) => {
   const [toggle, setToggle] = useState(false);
 
-  function toggleSideBar() {
+  function toggleModal() {
     setToggle(!toggle);
   }
 
   return (
     <div id={props.id} className="container-navbar">
-      <div className="container-mobile-nav flex-item" onClick={toggleSideBar}>
+      <div className="container-mobile-nav flex-item" onClick={toggleModal}>
         <div>Portfolio</div>
         <FaBars className="burger-icon" />
       </div>
 
       <div id={toggle ? 'modal-navlinks' : ''} className="container-navlinks flex-item">
         <div>
-          <ScrollLink classes={`nav-link`} ontoggle={toggleSideBar} scrollToTop={1}>
+          <ScrollLink classes={`nav-link`} ontoggle={toggleModal} scrollToTop={1}>
             Home
           </ScrollLink>
         </div>
         <div>
-          <ScrollLink scrollTo="Skills" classes={`nav-link`} ontoggle={toggleSideBar}>
+          <ScrollLink scrollTo="Skills" classes={`nav-link`} ontoggle={toggleModal}>
             Skills
           </ScrollLink>
         </div>
 
         <div>
-          <ScrollLink scrollTo="Projects" classes={`nav-link`} ontoggle={toggleSideBar}>
+          <ScrollLink scrollTo="Projects" classes={`nav-link`} ontoggle={toggleModal}>
             Projects
           </ScrollLink>
         </div>
 
         <div>
-          <ScrollLink scrollTo="About" classes={`nav-link`} ontoggle={toggleSideBar}>
+          <ScrollLink scrollTo="About" classes={`nav-link`} ontoggle={toggleModal}>
             About
           </ScrollLink>
         </div>
 
         <div>
-          <ScrollLink scrollTo="Contact" classes={`nav-link`} ontoggle={toggleSideBar}>
+          <ScrollLink scrollTo="Contact" classes={`nav-link`} ontoggle={toggleModal}>
             Contact
           </ScrollLink>
         </div>
@@ -53,7 +53,7 @@ const Navbar = (props) => {
             className="nav-link"
             href="https://drive.google.com/file/d/1uFhzlxC6hRraTQZX6a1g9CRqXq-toAzV/view"
             target={'blank'}
-            onClick={toggleSideBar}
+            onClick={toggleModal}
           >
             Resume
           </a>
