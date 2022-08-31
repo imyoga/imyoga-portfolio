@@ -8,7 +8,7 @@ const Image = (props) => {
     return (
 
         <div>
-            <img src={imageName} alt={`${imageName}-logo`} />            
+            <img src={imageName} alt={`${imageName}-logo`} loading='lazy'/>            
         </div>
 
 

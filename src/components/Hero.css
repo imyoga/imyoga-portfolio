@@ -1,55 +1,35 @@
-:root {
-  /* light theme */
-  --background-light-mode: #dddddd;
-  --font-color-light-mode: #222831;
-  --acccent-color-light-mode: #30475e;
-  --acccent-2-color-light-mode: #f05454;
-
-  --linear-gradient-text: linear-gradient(to right, #30475e, #f05454);
-
-  /* dark theme */
-  --background-dark-mode: #222831;
-  --font-color-dark-mode: #dddddd;
-  --acccent-color-dark-mode: #30475e;
-  --acccent-2-color-dark-mode: #f05454;
-
-  /* Font Size */
-  --font-xxl: 2rem;
-  --font-xl: 1.5rem;
-  --font-lg: 1.25rem;
-  --font-md: 1rem;
-  --font-sm: 0.75rem;
-}
-
 @import url('./global.css');
-@import url('https://fonts.googleapis.com/css?family=Tangerine');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 /* .container-hero *{
   outline: 1px solid grey;
 } */
 
-
-.container-hero { 
-  /* outline: 1px solid grey; */
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-
-  margin-top: 3.5rem;
-  background: var(--background-light-mode);
+/* .container-hero > div{
+  background-color: blue;
+  border: 1px solid red;
+} */
+.container-hero {
+  /* border: 10px solid purple; */
   height: calc(100vh - 3.5rem);
 
   font-size: 2.5rem;
-}
 
-.hero-titles {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 10vh;
+  justify-content: flex-start;
+}
+
+.hero-titles {
+  position: absolute;
+  top: 11rem;
+  z-index: -2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 8vh;
 }
 
 .name-heading {
@@ -57,19 +37,17 @@
   background: var(--linear-gradient-text);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: 'Tangerine';
+
   font-family: 'Dancing Script';
   font-size: 4rem;
   font-weight: 900;
-  z-index: 1;
-}
 
-/* Animation Heading Name  */
-.name-heading {
-  animation: fadeInAnimation ease 4s;
+  animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
+/* Animation Heading Name  */
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -85,12 +63,14 @@
 }
 
 .avatar {
-  position: relative;
-  margin-bottom: -10vh;
-  animation: fadeInLeft 3s;
+  position: absolute;
+  bottom: 3rem;
+  z-index: -1;
+  animation: fadeInLeft 2s;
   animation-fill-mode: forwards;
 }
 
+/* Animation Heading Avatar */
 @keyframes fadeInLeft {
   0% {
     opacity: 0.5;
@@ -101,38 +81,35 @@
     transform: translateX(0);
   }
 }
-
-.avatar {
-  z-index: 1;
-  transition: transform 2s;
-}
-
-.avatar:hover {
-  transition: width 2s;
-  transform: scale(1.25);
-}
+/* Animation Heading Avatar End */
 
 .hero-background {
-  background: var(--acccent-color-light-mode);
-  /* background-color: red; */
-  /* outline: 1px solid grey; */
+  background-color: var(--acccent-color-light-mode);
   width: 100vw;
-  height: 16vh;
+  height: 9rem;
+
   position: absolute;
   bottom: 0px;
-  z-index: 0;
+  z-index: -2;
 }
+
 @media (max-width: 700px) {
-  
-  .container-hero *{
+  .container-hero {
+    z-index: -1;
+    font-size: 2rem;
+  }
+  .hero-titles {
+    top: 4rem;
+  }
+  .container-hero * {
+    display: block;
     text-align: center;
   }
-  .name-heading{
-    max-width: 10ch;
+  .name-heading {
     display: block;
+    text-align: center;
   }
-  .avatar{
+  .avatar {
     margin-bottom: 0;
   }
-  
 }

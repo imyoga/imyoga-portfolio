@@ -1,21 +1,86 @@
-:root {
-  /* light theme */
-  --background-light-mode: #f4f4f4;
-  --font-color-light-mode: #1a1c20;
-  --acccent-color-light-mode: #f0a500;
-  /* dark theme */
-  --background-dark-mode: #1a1c20;
-  --font-color-dark-mode: #f4f4f4;
-  --acccent-color-dark-mode: #cf7500;
+:htk {
+  --background-light-mode: #dddddd;
+  /*rgb(221, 221, 221)*/
+  --font-color-light-mode: #222831;
+  /*rgb(34, 40, 49)*/
+  --acccent-color-light-mode: #30475e;
+  /*rgb(48, 71, 94)*/
+  --acccent-2-color-light-mode: #f05454;
+  /*rgb(240, 84, 84)*/
 }
 
 @import url('/src/components/global.css');
 
-.container-about {
+.container-about-background {
   height: calc(100vh - 3.5rem);
-  width: 100wh;
-  color: var(--background-light-mode);
+  width: 100vw;
+  /* border: 5px solid black; */
 
-  background-color: #02aab0;
-  background-image: linear-gradient(135deg,#02aab0,#00cdac);
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  position: relative;
+
+  background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 120%);
+  box-shadow: var(--box-shadow);
+}
+
+.container-about {
+  height: 100%;
+  width: 50vw;
+  /* border: 5px solid red; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+
+  padding-bottom: 2rem;
+}
+
+.container-about h2 {
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px var(--acccent-color-light-mode);
+  transition: transform 0.4s;
+  color: var(--font-color-light-mode);
+}
+
+.container-about p {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: justify;
+}
+.container-about span {
+  text-decoration: underline;
+}
+@media (max-width: 1300px) {
+  .container-about-background,
+  .container-about {
+    height: max-content;
+    padding-block: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container-about {
+    height: 100%;
+    width: 80vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .container-about-background,
+  .container-about {
+    height: max-content;
+    padding-block: 2rem;
+  }
+
+  .container-about {
+    width: 90%;
+  }
+  .container-about p {
+    font-size: 1.6rem;
+  }
 }

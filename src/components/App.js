@@ -12,7 +12,6 @@ import './App.css';
 import ToTheTop from './ToTheTop';
 
 function App() {
-  
   return (
     <BrowserRouter>
       <Routes>
@@ -21,19 +20,23 @@ function App() {
           path="/"
           element={
             <div className="container-app">
-              <Navbar id={'Navbar'} />
-              <Hero id={'Hero'} />
-              <Skills id={'Skills'} />
-              <Projects id={'Projects'} />
-              <About id={'About'} />
-              <Contact id={'Contact'} />
-              <Footer id={'Footer'} />
-              <ToTheTop id={'ToTheTop'} />
+              <Navbar id={'Navbar'} className="child-app" />
+              <Hero id={'Hero'} className="child-app" />
+              <Skills id={'Skills'} className="child-app" />
+              <Projects id={'Projects'} className="child-app" />
+              <About id={'About'} className="child-app" />
+              <Contact id={'Contact'} className="child-app" />
+              <Footer id={'Footer'} className="child-app" />
+              <ToTheTop id={'ToTheTop'} className="child-app" />
             </div>
           }
         />
-        <Route exact path="/thankyou" element={<Thankyou />} />
-        <Route path="*" element={<NotFound />} />
+        <Route
+          exact
+          path="/thankyou"
+          element={<Thankyou className="container-thankyou" />}
+        />
+        <Route path="*" element={<NotFound className="container-404" />} />
       </Routes>
     </BrowserRouter>
   );

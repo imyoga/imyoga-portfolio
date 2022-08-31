@@ -12,22 +12,26 @@
   --acccent-2-color-dark-mode: #f05454;
 }
 
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  color: var(--font-color-light-mode);
+  background: var(--background-light-mode);
+
+  width: 100vw;
+  height: max-content;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Inter, system-ui, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
+
 *::selection {
+  color: var(--font-color-dark-mode);
   background-color: var(--acccent-2-color-light-mode);
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-} */
-
-/* google sans, Inter, system-ui, sans-serif, -apple-system,
-BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
-'Droid Sans', 'Helvetica Neue', sans-serif; */

@@ -1,38 +1,23 @@
 @import url('./global.css');
-:root {
-    /* light theme */
-    --background-light-mode: #DDDDDD;
-    --font-color-light-mode: #222831;
-    --acccent-color-light-mode: #30475E;
-    --acccent-2-color-light-mode: #F05454;
-    
-  
-    /* dark theme */
-    --background-dark-mode: #222831;
-    --font-color-dark-mode: #DDDDDD;
-    --acccent-color-dark-mode: #30475E;
-    --acccent-2-color-dark-mode: #F05454;
-  
-  }
-
 
   .container-projects{
     /* outline: 1px solid grey; */
     /* background-color: yellowgreen; */
+    /* border: 5px solid purple; */
+    
     max-width: 70vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     row-gap: 8vh;
-    padding-bottom: 10vh;
+    padding-block: 10vh;
   }
   .title-work{
     font-size: 3rem;
-    text-shadow: 1px 1px 2px var(--acccent-2-color-light-mode);
+    text-shadow: 1px 1px 2px var(--acccent-color-light-mode);
     transition: transform 0.4s;
-    color: var(--font-color-light-mode);
-    margin-top: 25px;
+    color: var(--font-color-light-mode);    
   }
   .title-work:hover{
     transform: scale(1.01 , 1.01);

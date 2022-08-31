@@ -22,7 +22,7 @@ const ScrollLink = (props) => {
     <Link
       activeClass="active"
       className={props.classes}
-      to={props.scrollTo}
+      to={props.scrollTo==="Hero" ? null:props.scrollTo}
       spy={true}
       smooth={true}
       offset={props.offset ?? -56}

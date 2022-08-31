@@ -1,16 +1,12 @@
-@import url('/src/components/Navbar.css');
 @import url('/src/components/global.css');
+
 .container-app {
-  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  row-gap: 0;
 
-  background-color: var(--background-light-mode);
-  color: var(--font-color-light-mode);
-  font-size: 1.2rem;
+ 
 }
-/* .container-app > *{
-    border: 1px solid grey;
-} */
 

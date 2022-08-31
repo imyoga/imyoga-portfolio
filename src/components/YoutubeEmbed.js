@@ -12,6 +12,7 @@ const YoutubeEmbed = (props) => (
       allowFullScreen
       title="Embedded youtube"
       className="iframe"
+      loading="lazy"
     />
   </div>
 );

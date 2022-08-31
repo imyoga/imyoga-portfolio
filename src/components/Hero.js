@@ -7,7 +7,7 @@ const Hero = (props) => {
     <div id={props.id} className="container-hero">
       <div className="hero-titles">
         <h2>
-          👋Hi, I'm <span className="name-heading">Yogesh Moradiya.</span>
+          👋Hi, <span>I'm </span><span className="name-heading">Yogesh Moradiya.</span>
         </h2>
 
         <p className="title-heading">I design and build things for web.</p>
@@ -16,7 +16,7 @@ const Hero = (props) => {
       <div className="avatar">
         <ImportedAvatar />
       </div>
-      <div className="hero-background"></div>
+      <div className="hero-background">{""}</div>
     </div>
   );
 };

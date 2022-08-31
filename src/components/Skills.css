@@ -1,28 +1,14 @@
-:root {
-  /* light theme */
-  --background-light-mode: #dddddd;
-  /*rgb(221, 221, 221)*/
-  --font-color-light-mode: #222831;
-  /*rgb(34, 40, 49)*/
-  --acccent-color-light-mode: #30475e;
-  /*rgb(48, 71, 94)*/
-  --acccent-2-color-light-mode: #f05454;
-  /*rgb(240, 84, 84)*/
-
-  /* dark theme */
-  --background-dark-mode: #222831;
-  --font-color-dark-mode: #dddddd;
-  --acccent-color-dark-mode: #30475e;
-  --acccent-2-color-dark-mode: #f05454;
-}
 
 @import url('./global.css');
 /* .container-skills *{
   outline: 1px solid yellow;
 } */
-
+.container-skills *{
+  list-style-type: none;
+}
 .container-skills {
-  
+  /* border: 5px solid white;
+   */
   height: calc(100vh - 3.5rem);
   width: 100vw;
 
@@ -60,7 +46,7 @@
 
 .card-skills {
   background-color: var(--background-light-mode);
-  box-shadow: rgb(34, 40, 49, 0.7) 0px 7px 29px 0px;
+  box-shadow: var(--box-shadow);
 
   border: 1px solid var(--font-color-light-mode);
   border-radius: 10px;
@@ -68,9 +54,7 @@
   margin-inline: 20px;
 
   height: 20rem;
-  width: 23rem;
-
-  
+  width: 23rem;  
 
   display: flex;
   flex-direction: column;
@@ -79,7 +63,6 @@
   padding: 0;
   row-gap: 2rem;
 
-  list-style-type: none;
   transition: transform 0.4s;
 
 }
@@ -90,9 +73,7 @@
 .title-card {
   font-weight: 700;
   font-size: 1.5rem;
-  margin-top: 15px;
-
-  
+  margin-top: 15px;  
 }
 
 .container-skill-items {
@@ -103,8 +84,7 @@
   padding: 5px;
   row-gap: 2rem;
   height: 60%;
-  width: 90%;
-  
+  width: 90%; 
 
 }
 
@@ -120,18 +100,12 @@
   flex: 1 0 30%;
 }
 
-.image-skill:hover{
-  transform: translate(0, -40px);
-
-}
 
 @media (max-width:700px) {
   .container-skills {
     height: 200vh;
   }
-  .title-skill{
-    transform: translate(0px, 20px);
-  }
+  
   .container-cards-skills{
     display: flex;
     flex-direction: column;

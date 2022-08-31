@@ -20,7 +20,12 @@ const Navbar = (props) => {
 
       <div id={toggle ? 'modal-navlinks' : ''} className="container-navlinks flex-item">
         <div>
-          <ScrollLink classes={`nav-link`} ontoggle={toggleModal} scrollToTop={1}>
+          <ScrollLink
+            scrollTo="Hero"
+            classes={`nav-link`}
+            ontoggle={toggleModal}
+            scrollToTop={1}
+          >
             Home
           </ScrollLink>
         </div>
