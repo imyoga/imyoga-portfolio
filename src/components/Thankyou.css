@@ -1,4 +1,4 @@
-@import "global.css";
+@import url('./global.css');
 
 .container-thankyou > *{
    display: block;

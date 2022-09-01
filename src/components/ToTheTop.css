@@ -1,3 +1,5 @@
+@import url('./global.css');
+
 .to-the-top {
   width: 2.5rem;
   height: 2.5rem;
@@ -14,7 +16,11 @@
   background-color: rgba(50, 50, 50, 0.5);
   border-radius: 5px 0 0 5px;
   text-align: center;
-  border: 1px solid var(--font-color-light-mode);
+  border: 1px solid var(--accent);
+  border-right: none;
+
+  transition: transform 0.5s;
+
 }
 .to-the-top:hover {
   cursor: pointer;

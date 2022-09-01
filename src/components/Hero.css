@@ -8,7 +8,7 @@
 .container-hero {
   /* border: 10px solid purple; */
   height: calc(100vh - 3.5rem);
-  box-shadow: var(--box-shadow);
+  /* box-shadow: var(--box-shadow-accent); */
 
   font-size: 2.5rem;
   position: relative;
@@ -16,6 +16,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: var(--box-shadow-black);
+
 }
 
 .container-hero > div {
@@ -54,7 +56,7 @@
 }
 
 .hero-background {
-  background-color: var(--acccent-color-light-mode);
+  background-color: var(--nav-bg);
 
   width: 100%;
   height: 9rem;

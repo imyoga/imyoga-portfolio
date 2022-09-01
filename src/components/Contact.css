@@ -7,6 +7,9 @@
   width: 100vw;
 
   font-size: 2rem;
+  box-shadow: var(--box-shadow-black);
+
+
 }
 
 .container-contact > * {
@@ -49,7 +52,7 @@
 .hr {
   width: 100vw;
   height: 1px;
-  background-color: var(--font-color-light-mode);
+  background-color: var(--accent);
 
   position: absolute;
   top: 9rem;
@@ -60,7 +63,7 @@
   font-size: 3rem;
 
   font-weight: 500;
-  text-shadow: 1px 1px 2px var(--font-color-light-mode);
+  text-shadow: var(--text-shadow-dark);
 }
 
 form {
@@ -128,33 +131,35 @@ form input {
 }
 form input,
 form textarea {
-  border: 1px solid var(--font-color-light-mode);
+  background-color: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--accent);
   border-radius: 5px;
+  box-shadow: var(--box-shadow-black);
   font-size: 1.2rem;
-  color: var(--font-color-light-mode);
   resize: none;
-  box-shadow: var(--box-shadow);
+  padding: 10px;
 }
 
 form button {
-  height: 2rem;
+  height: 2.1rem;
   width: 10rem;
   font-size: 1.25rem;
-  background-color: var(--acccent-color-light-mode);
-  color: var(--font-color-dark-mode);
-  border: 1px solid var(--font-color-light-mode);
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: 1px solid var(--button-text);
   border-radius: 5px;
 
   align-self: flex-start;
   margin-top: 1rem;
 
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow-black);
 }
 form button:hover {
   transform: scale(1.01, 1.01);
 }
 form button:active {
-  background-color: var(--font-color-light-mode);
+  background-color: var(--accent);
 }
 
 @media (max-width: 1300px) {

@@ -12,12 +12,15 @@
     justify-content: space-between;
     row-gap: 8vh;
     padding-block: 10vh;
+  
+    
+  
   }
   .title-work{
     font-size: 3rem;
-    text-shadow: 1px 1px 2px var(--acccent-color-light-mode);
+    text-shadow: var(--text-shadow-dark);
     transition: transform 0.4s;
-    color: var(--font-color-light-mode);    
+    color: var(--text);    
   }
   .title-work:hover{
     transform: scale(1.01 , 1.01);

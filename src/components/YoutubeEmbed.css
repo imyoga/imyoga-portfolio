@@ -1,7 +1,7 @@
+@import url('./global.css');
 
-@import url(./global.css);
 .embed-youtube *{
-    border: 5px solid var(--acccent-2-color-light-mode);  
+    border: 5px solid var(--bg);  
     border-radius: 5px;  
 }
 
