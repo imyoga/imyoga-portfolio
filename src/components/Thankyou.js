@@ -1,13 +1,16 @@
 import React from 'react';
 import message from '../images/message.png';
 import BackToHome from './BackToHome';
+import './BackToHome.css';
+import './Thankyou.css';
+
 
 const Thankyou = () => {
   return (
     <div className="container-thankyou">
-      <img src={message} alt="message sent icon" />
+      <img src={message} alt="message sent icon" className='image-message-sent'/>
+      <p>Your Message Sent Successfully.</p>
       <h2>Thank you !</h2>
-      <p>Sent Successfully.</p>
       <BackToHome />
     </div>
   );

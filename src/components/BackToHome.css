@@ -1,6 +1,11 @@
 @import url('global.css');
 
+
+/* .container-back-to-home {
+  border: 5px solid black;
+} */
 .container-back-to-home * {
+
   
   display: block;
   text-align: center;
@@ -20,6 +25,9 @@
   width: 10rem;
   color: var(--font-color-light-mode);
   transition: transform 0.5s;
+  border: 1px solid var(--font-color-light-mode);
+  border-radius: 10px;
+
 
 }
 .container-link:active {

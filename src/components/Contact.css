@@ -183,6 +183,7 @@ form button:active {
   .thanks-note {
     display: block;
     text-align: center;
+    margin-inline: 10px;
     font-size: 1.7rem;
   }
   .avatar-contact-me {
