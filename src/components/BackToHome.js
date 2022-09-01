@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import home from '../images/home-icon.png';
+import { AiOutlineHome } from 'react-icons/ai';
+import './BackToHome.css';
 
 const BackToHome = () => {
   return (
-    <div>
-      <p>
-        Back to home{' '}
-        <Link to={'/'}>
-          <img src={home} alt="home-icon" />
-        </Link>{' '}
-      </p>
+    <div className="container-back-to-home">
+      <Link to={'/'}>
+        <div className="container-link">
+          <AiOutlineHome className="icon-home" />
+          <p>Back to home </p>
+        </div>
+      </Link>
     </div>
   );
 };

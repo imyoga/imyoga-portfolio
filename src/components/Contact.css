@@ -1,75 +1,70 @@
-:root {
-  /* light theme */
-  --background-light-mode: #dddddd;
-  /*rgb(221, 221, 221)*/
-  --font-color-light-mode: #222831;
-  /*rgb(34, 40, 49)*/
-  --acccent-color-light-mode: #30475e;
-  /*rgb(48, 71, 94)*/
-  --acccent-2-color-light-mode: #f05454;
-  /*rgb(240, 84, 84)*/
-
-  /* dark theme */
-  --background-dark-mode: #222831;
-  --font-color-dark-mode: #dddddd;
-  --acccent-color-dark-mode: #30475e;
-  --acccent-2-color-dark-mode: #f05454;
-
-  --linear-gradient-text: linear-gradient(to right, #30475e, #f05454);
-  --box-shadow: rgb(34, 40, 49, 0.9) 0px 7px 29px 0px;
-}
-
 @import url('./global.css');
+
 .container-contact {
-  /* border: 5px solid red; */
+  /* border: 5px solid purple; */
 
   height: calc(100vh - 3.5rem);
   width: 100vw;
 
-  font-size: 3rem;
+  font-size: 2rem;
+}
+
+.container-contact > * {
+  display: block;
+  margin-inline: auto;
+}
+
+.container-thank-to-contact > * {
+  /* border: 2px solid yellow; */
+  margin: 0;
+  display: block;
+  margin-inline: auto;
+  text-align: center;
+}
+.container-thank-to-contact {
+  /* border: 10px solid blue; */
+  /* background-color: blueviolet; */
+
+  width: 100%;
+  height: 40vh;
+  position: relative;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-  position: relative;
+.thanks-note {
+  margin-top: 2rem;
 }
 
 .avatar-contact-me {
+  /* scale: 0.4; */
   transform: scale(0.4, 0.4);
 
   position: absolute;
-  top: 5rem;
-
-  z-index: 1;
+  top: 1rem;
 }
 
 .hr {
   width: 100vw;
-  height: 0.5px;
+  height: 1px;
   background-color: var(--font-color-light-mode);
 
   position: absolute;
-  top: 13rem;
+  top: 9rem;
 }
 
-.thanks-note {
-  position: absolute;
-  top: 4rem;
-}
 .contact-me {
+  margin-top: 8rem;
   font-size: 3rem;
-  position: absolute;
-  top: 17rem;
+
   font-weight: 500;
   text-shadow: 1px 1px 2px var(--font-color-light-mode);
 }
 
 form {
   /* border: 5px solid green; */
-
-  position: absolute;
-  top: 22rem;
 
   width: 40%;
   height: max-content;
@@ -85,44 +80,52 @@ form {
 }
 
 .container-name-email {
+  /* border: 5px solid black; */
+  /* background-color: aquamarine; */
+
   display: flex;
   flex-direction: row;
-  align-items: stretch;
+  justify-content: space-between;
 
-  width: 100%;
+  width: auto;
 }
 
 .container-email,
 .container-name {
-  flex: 50%;
+  /* border: 5px solid black; */
+  flex: 1;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-
-  padding-right: 1rem;
+}
+.container-name {
+  margin-right: 0.5rem;
+}
+.container-email {
+  margin-left: 0.5rem;
 }
 
 .container-message {
+  flex: 100%;
+  /* border: 5px solid black; */
   display: flex;
   flex-direction: column;
-  padding-right: 1rem;
-
+  margin-top: 1rem;
   width: 100%;
 }
 
-form input {
-  height: 2.3rem;
-  padding-inline: 5px;
-}
 form label {
   padding-bottom: 5px;
+  font-weight: 600;
 }
 form span {
   color: red;
   margin-left: 3px;
 }
-
+form input {
+  height: 2.3rem;
+}
 form input,
 form textarea {
   border: 1px solid var(--font-color-light-mode);
@@ -139,13 +142,13 @@ form button {
   font-size: 1.25rem;
   background-color: var(--acccent-color-light-mode);
   color: var(--font-color-dark-mode);
+  border: 1px solid var(--font-color-light-mode);
   border-radius: 5px;
 
   align-self: flex-start;
-  margin-top: 5px;
+  margin-top: 1rem;
 
   box-shadow: var(--box-shadow);
-
 }
 form button:hover {
   transform: scale(1.01, 1.01);
@@ -157,6 +160,9 @@ form button:active {
 @media (max-width: 1300px) {
   .thanks-note {
     font-size: 2.5rem;
+  }
+  form {
+    width: 50%;
   }
 }
 @media (max-width: 1000px) {
@@ -170,19 +176,21 @@ form button:active {
 
 @media (max-width: 800px) {
   .container-contact {
-    height: 110vh;
+    height: max-content;
+    padding-block: 2rem;
   }
 
   .thanks-note {
     display: block;
     text-align: center;
+    font-size: 1.7rem;
   }
   .avatar-contact-me {
-    top: 6rem;
+    top: 2rem;
   }
 
   .hr {
-    top: 14rem;
+    top: 10rem;
   }
 
   form {
@@ -190,17 +198,14 @@ form button:active {
     align-items: center;
   }
   .container-name-email {
+    
     display: flex;
     flex-direction: column;
-    align-items: center;
   }
   .container-email,
   .container-name {
     margin-block: 5px;
-    padding-right: 0;
-  }
-  .container-message {
-    padding-right: 0;
+    margin-inline: 0;
   }
 
   form input,
@@ -224,5 +229,12 @@ form button:active {
   }
   .contact-me {
     font-size: 2rem;
+  }
+  .avatar-contact-me {
+    top: 2rem;
+  }
+
+  .hr {
+    top: 10rem;
   }
 }

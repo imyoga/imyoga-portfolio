@@ -4,10 +4,11 @@ import ScrollLink from './ScrollLink.js';
 
 const ToTheTop = (props) => {
   return (
-    <ScrollLink scrollToTop={1}>
-      {' '}
-      <div className="to-the-top">^</div>{' '}
-    </ScrollLink>
+    <div className="to-the-top">
+      <ScrollLink scrollToTop={1}>
+        <div >^</div>
+      </ScrollLink>
+    </div>
   );
 };
 

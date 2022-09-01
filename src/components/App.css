@@ -9,9 +9,3 @@
   margin: auto;
 }
 
-
-@media(max-width:700px){
-  .container-app > *{
-    /* border: 5px solid green; */
-  }
-}

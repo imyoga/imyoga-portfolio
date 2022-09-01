@@ -5,20 +5,23 @@ import './Contact.css';
 const Form = (props) => {
   return (
     <div id={props.id} className="container-contact">
-      <div className="avatar-contact-me">
-        <ImportedAvatar />
+      <div className="container-thank-to-contact">
+        <div className="hr"></div>
+        <div className="avatar-contact-me">
+          <ImportedAvatar />
+        </div>
+        <p className="thanks-note">
+          Thank you for taking the time to review my portfolio.
+        </p>
+        <h2 className="contact-me">Contact Me</h2>
       </div>
-      <div className="hr"></div>
-
-      <p className="thanks-note">Thank you for taking the time to review my portfolio.</p>
-      <h2 className="contact-me">Contact Me</h2>
 
       <form action="https://formsubmit.co/moradiyayogeshg@gmail.com" method="POST">
         <div className="container-name-email">
           <div className="container-name">
-          <label>
-          Name<span>*</span>
-        </label>
+            <label>
+              Name<span>*</span>
+            </label>
             <input type="text" name="name" required />
           </div>
 

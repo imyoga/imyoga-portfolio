@@ -8,6 +8,7 @@
 .container-hero {
   /* border: 10px solid purple; */
   height: calc(100vh - 3.5rem);
+  box-shadow: var(--box-shadow);
 
   font-size: 2.5rem;
   position: relative;
@@ -25,7 +26,7 @@
 }
 
 .hero-titles {
-  margin-top: 2rem;
+  margin-top:5rem;
 }
 .title-heading {
   /* border: 1px solid blue; */

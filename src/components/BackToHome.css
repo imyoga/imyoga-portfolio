@@ -1,0 +1,27 @@
+@import url('global.css');
+
+.container-back-to-home * {
+  
+  display: block;
+  text-align: center;
+  margin-inline: auto;
+  color: var(-font-color-light-mode);
+  font-size: 1.5rem;
+}
+
+.icon-home {
+  text-decoration: none;
+  font-size: 4rem;
+  color: var(--font-color-light-mode);
+}
+
+.container-link {
+  height: 7rem;
+  width: 10rem;
+  color: var(--font-color-light-mode);
+  transition: transform 0.5s;
+
+}
+.container-link:active {
+  box-shadow: var(--box-shadow);
+}
