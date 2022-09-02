@@ -3,7 +3,7 @@
   "short_name": "Portfolio_YM",
   "theme_color": "#1d2025",
   "background_color": "#1d2025",
-  "start_url": "/",
+  "start_url": "https://www.imyoga.net/",
   "id": "/",
   "display": "standalone",
   "description": "Portfolio created by React",
