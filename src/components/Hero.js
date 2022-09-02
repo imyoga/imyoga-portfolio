@@ -10,7 +10,7 @@ const Hero = (props) => {
       <div className="hero-titles">
         <h2>
           👋Hi, <span>I'm </span>
-          <span className="name-heading">Yogesh Moradiya.</span>
+          <span className="name-heading">Yogesh Moradiya...</span>
         </h2>
         <p className="title-heading">I design and build things for web.</p>
       </div>
