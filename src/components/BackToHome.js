@@ -8,7 +8,7 @@ const BackToHome = () => {
     <div className="container-back-to-home">
       <Link to={'/'}>
         <div className="container-link">
-          <AiOutlineHome className="icon-home" />
+          <AiOutlineHome className="icon-home" loading='lazy'/>
           <p>Back to home </p>
         </div>
       </Link>

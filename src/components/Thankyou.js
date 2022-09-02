@@ -8,7 +8,7 @@ import './Thankyou.css';
 const Thankyou = () => {
   return (
     <div className="container-thankyou">
-      <img src={message} alt="message sent icon" className='image-message-sent'/>
+      <img src={message} alt="message sent icon" className='image-message-sent' loading='lazy'/>
       <p>Your Message Sent Successfully.</p>
       <h2>Thank you !</h2>
       <BackToHome />

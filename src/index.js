@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/App';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import './index.css';
 //import reportWebVitals from './reportWebVitals';
 
@@ -15,3 +16,4 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 //reportWebVitals();
 
+serviceWorkerRegistration.register();

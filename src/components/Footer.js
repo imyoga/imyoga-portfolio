@@ -14,7 +14,7 @@ const Footer = () => {
           target="_blank"
           className="link-icon"
         >
-          <AiOutlineLinkedin className="icon" />
+          <AiOutlineLinkedin className="icon" loading='lazy'/>
         </a>
 
         <a
@@ -23,7 +23,7 @@ const Footer = () => {
           target="_blank"
           className="link-icon"
         >
-          <AiOutlineGithub className="icon" />
+          <AiOutlineGithub className="icon" loading='lazy' />
         </a>
         <a
           href="https://drive.google.com/file/d/1uFhzlxC6hRraTQZX6a1g9CRqXq-toAzV/view"
@@ -31,7 +31,7 @@ const Footer = () => {
           target="_blank"
           className="link-icon"
         >
-          <GoFile className="icon" />
+          <GoFile className="icon" loading='lazy'/>
         </a>
       </div>
       <div className='container-footer-notes'>

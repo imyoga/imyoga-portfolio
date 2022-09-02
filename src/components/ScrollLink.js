@@ -9,7 +9,7 @@ const ScrollLink = (props) => {
   // console.log(props);
 
   function clickHandler() {
-    console.log('clicked on scroll link');
+    // console.log('clicked on scroll link');
     if (props.ontoggle) {
       props.ontoggle();
     }
@@ -23,7 +23,7 @@ const ScrollLink = (props) => {
     <Link
       activeClass="active"
       className={props.classes}
-      to={props.scrollTo === 'Hero' ? null : props.scrollTo}
+      to={props.scrollTo === 'Hero' ? "" : props.scrollTo}
       spy={true}
       smooth={true}
       offset={props.offset ?? -56}

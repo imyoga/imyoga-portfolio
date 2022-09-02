@@ -7,7 +7,6 @@ let projects = [
     title: 'Slynk',
     description: `A plateform for keeping users' all digital identity in one place while it's linked with digital card. Responsive with all media type while providing perfect user experience.`,
     technologies: [
-      'PWA',
       'React',
       'TypeScript',
       'Node/Express',
@@ -24,7 +23,7 @@ let projects = [
   {
     title: 'Par Infotech',
     description: `A business website provides an online presence so people can learn about a company, its employees, products, services, and culture. Responsive, accessible and SEO friendly.`,
-    technologies: ['PWA', 'React', 'Node/Express'],
+    technologies: ['React', 'Node/Express'],
     collobraters: ['Bhoomi B, Nick R'],
     note: `This project is still in development. A visitors may see some bugs. Hosted on AWS amplify`,
     links: ['See Live', 'https://parinfotech.com/'],
