@@ -167,6 +167,7 @@ form button:active {
     font-size: 2.5rem;
   }
   form {
+    /* background-color: aqua; */
     width: 50%;
   }
 }

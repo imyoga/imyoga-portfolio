@@ -75,7 +75,8 @@
   }
 
   .container-about {
-    width: 90%;
+    /* background-color: aqua; */
+    width: 90vw;
     padding-top: 0;
   } 
   .container-about p {
