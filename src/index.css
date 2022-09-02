@@ -64,7 +64,4 @@
   }
 }
 
-/* this patch is to fix light house error for mobile viewport */
-*{  
-  overflow-x: hidden;
-}
+
