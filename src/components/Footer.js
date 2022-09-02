@@ -45,6 +45,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-// <FontAwesomeIcon icon={['fab', 'twitter']} />
-// <FontAwesomeIcon icon={['fab', 'facebook']} />

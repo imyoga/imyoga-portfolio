@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-scroll';
+import { Link as Links } from 'react-scroll';
 import * as Scroll from 'react-scroll';
 import './ScrollLink.css';
 import './Navbar.css';
-
 
 const ScrollLink = (props) => {
   // console.log(props);
@@ -20,10 +19,10 @@ const ScrollLink = (props) => {
   }
 
   return (
-    <Link
+    <Links
+      to={props.scrollTo === 'Hero' ? '' : props.scrollTo}
       activeClass="active"
       className={props.classes}
-      to={props.scrollTo === 'Hero' ? "" : props.scrollTo}
       spy={true}
       smooth={true}
       offset={props.offset ?? -56}
@@ -31,7 +30,7 @@ const ScrollLink = (props) => {
       onClick={clickHandler}
     >
       {props.children}
-    </Link>
+    </Links>
   );
 };
 

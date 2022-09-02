@@ -6,7 +6,7 @@ import './BackToHome.css';
 const BackToHome = () => {
   return (
     <div className="container-back-to-home">
-      <Link to={'/'}>
+      <Link to="/">
         <div className="container-link">
           <AiOutlineHome className="icon-home" loading='lazy'/>
           <p>Back to home </p>
