@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from './Image';
 import { frontEnd, backEnd, tools } from './skill-list';
-import './Skills.css';
+import '../styles/Skills.css';
 
 const Skills = (props) => {
   return (

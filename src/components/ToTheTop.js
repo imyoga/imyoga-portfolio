@@ -1,5 +1,5 @@
 import React from 'react';
-import './ToTheTop.css';
+import '../styles/ToTheTop.css';
 import ScrollLink from './ScrollLink.js';
 
 const ToTheTop = (props) => {

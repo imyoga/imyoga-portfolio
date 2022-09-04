@@ -2,7 +2,7 @@ import React from 'react';
 import { AiOutlineLinkedin } from 'react-icons/ai';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { GoFile } from 'react-icons/go';
-import './Footer.css';
+import '../styles/Footer.css';
 
 const Footer = () => {
   return (

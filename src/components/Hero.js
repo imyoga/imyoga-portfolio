@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactComponent as ImportedAvatar } from '../images/avatar.svg';
-import './Hero.css';
+import '../styles/Hero.css';
 
 const Hero = (props) => {
   return (

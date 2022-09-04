@@ -1,6 +1,6 @@
 import React from 'react';
 import { ReactComponent as ImportedAvatar } from '../images/avatar.svg';
-import './Contact.css';
+import '../styles/Contact.css';
 
 const Form = (props) => {
   return (

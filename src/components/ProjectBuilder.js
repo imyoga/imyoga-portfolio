@@ -1,6 +1,6 @@
 import React from 'react';
 import YoutubeEmbed from './YoutubeEmbed';
-import './ProjectBuilder.css'
+import '../styles/ProjectBuilder.css'
 const ProjectBuilder = (props) => {
   let project = props.project;
 

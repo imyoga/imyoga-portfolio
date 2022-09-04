@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link as Links } from 'react-scroll';
 import * as Scroll from 'react-scroll';
-import './ScrollLink.css';
-import './Navbar.css';
+import '../styles/ScrollLink.css';
+import '../styles/Navbar.css';
 
 const ScrollLink = (props) => {
   // console.log(props);

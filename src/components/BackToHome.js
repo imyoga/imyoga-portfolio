@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { AiOutlineHome } from 'react-icons/ai';
-import './BackToHome.css';
+import '../styles/BackToHome.css';
 
 const BackToHome = () => {
   return (

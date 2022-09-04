@@ -8,7 +8,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import About from './About';
 import Contact from './Contact';
-import './App.css';
+import '../styles/App.css';
 import ToTheTop from './ToTheTop';
 
 function App() {

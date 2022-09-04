@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjectBuilder from './ProjectBuilder';
-import './Projects.css';
+import '../styles/Projects.css';
 
 let projects = [
   {

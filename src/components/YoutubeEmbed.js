@@ -1,8 +1,8 @@
-import React from "react";
-import './YoutubeEmbed.css';
+import React from 'react';
+import '../styles/YoutubeEmbed.css';
 
 const YoutubeEmbed = (props) => (
-  <div className="embed-youtube">
+  <div className="embed-youtube" loading="lazy">
     <iframe
       width={400}
       height={225}
@@ -12,11 +12,8 @@ const YoutubeEmbed = (props) => (
       allowFullScreen
       title="Embedded youtube"
       className="iframe"
-      loading="lazy"
     />
   </div>
 );
-
-
 
 export default YoutubeEmbed;

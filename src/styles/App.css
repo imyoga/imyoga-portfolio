@@ -1,4 +1,4 @@
-@import url('/src/components/global.css');
+@import url('./global.css');
 
 .container-app {
   display: block 

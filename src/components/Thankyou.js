@@ -1,8 +1,8 @@
 import React from 'react';
 import message from '../images/message.png';
 import BackToHome from './BackToHome';
-import './BackToHome.css';
-import './Thankyou.css';
+import '../styles/BackToHome.css';
+import '../styles/Thankyou.css';
 
 
 const Thankyou = () => {

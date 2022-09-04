@@ -1,7 +1,7 @@
 import React from 'react';
 import notfound from "../images/notfound.png"
 import BackToHome from './BackToHome';
-import './NotFound.css'
+import '../styles/NotFound.css'
 
 const NotFound = () => {
     return (

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ScrollLink from './ScrollLink.js';
 import { FaBars } from 'react-icons/fa';
 // import home from '../images/home-icon.png';
-import './Navbar.css';
+import '../styles/Navbar.css';
 
 const Navbar = (props) => {
   const [toggle, setToggle] = useState(false);
