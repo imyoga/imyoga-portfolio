@@ -19,25 +19,25 @@ const Form = (props) => {
       <form action="https://formsubmit.co/moradiyayogeshg@gmail.com" method="POST">
         <div className="container-name-email">
           <div className="container-name">
-            <label>
+            <label for="name">
               Name<span>*</span>
             </label>
-            <input type="text" name="name" required />
+            <input type="text" id="name" name="name" required />
           </div>
 
           <div className="container-email">
-            <label>
+            <label for='email'>
               Email<span>*</span>
             </label>
-            <input type="email" name="email" required />
+            <input type="email" id='email' name="email" required />
           </div>
         </div>
 
         <div className="container-message">
-          <label>
+          <label for="message">
             Message<span>*</span>
           </label>
-          <textarea type="text" name="name" rows="5" cols="30" required />
+          <textarea type="text" id='message' name="name" rows="5" cols="30" required />
         </div>
 
         <input type="hidden" name="_captcha" value="false" />

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ScrollLink from './ScrollLink.js';
 import { FaBars } from 'react-icons/fa';
-// import home from '../images/home-icon.png';
 import '../styles/Navbar.css';
 
 const Navbar = (props) => {
