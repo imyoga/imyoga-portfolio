@@ -18,6 +18,7 @@ import git from '../images/git.png';
 import module from '../images/module.png';
 import npm from '../images/npm.png';
 import aws from '../images/aws.png';
+import parcel from '../images/parcel.png';
 
 let frontEnd = [
   [javascript, 'JavaScript'],
@@ -32,6 +33,7 @@ let tools = [
   [git, 'Git'],
   [agile3, 'Agile'],
   [module, 'Webpack'],
+  [parcel, 'Parcel'],
   [npm, 'Npm'],
   [aws, 'AWS'],
 ];

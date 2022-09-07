@@ -19,14 +19,14 @@ const Form = (props) => {
       <form action="https://formsubmit.co/moradiyayogeshg@gmail.com" method="POST">
         <div className="container-name-email">
           <div className="container-name">
-            <label for="name">
+            <label htmlFor="name">
               Name<span>*</span>
             </label>
             <input type="text" id="name" name="name" required />
           </div>
 
           <div className="container-email">
-            <label for='email'>
+            <label htmlFor='email'>
               Email<span>*</span>
             </label>
             <input type="email" id='email' name="email" required />
@@ -34,7 +34,7 @@ const Form = (props) => {
         </div>
 
         <div className="container-message">
-          <label for="message">
+          <label htmlFor="message">
             Message<span>*</span>
           </label>
           <textarea type="text" id='message' name="name" rows="5" cols="30" required />

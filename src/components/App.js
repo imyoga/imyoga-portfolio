@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -8,10 +9,19 @@ import Skills from './Skills';
 import Projects from './Projects';
 import About from './About';
 import Contact from './Contact';
-import '../styles/App.css';
 import ToTheTop from './ToTheTop';
+import LightMode from './LightMode';
+import '../styles/App.css';
 
 function App() {
+  const [theme, setTheme] = useState('');
+
+  console.log(theme);
+
+  const pull_data = (data) => {
+    setTheme(data);
+  };
+
   return (
     <BrowserRouter>
       <Routes>
@@ -19,7 +29,7 @@ function App() {
           exact
           path="/"
           element={
-            <div className="container-app">
+            <div className={theme ? `container-app ${"light-theme"}` : `container-app`}>
               <Navbar id={'Navbar'} className="child-app" />
               <Hero id={'Hero'} className="child-app" />
               <Skills id={'Skills'} className="child-app" />
@@ -28,15 +38,16 @@ function App() {
               <Contact id={'Contact'} className="child-app" />
               <Footer id={'Footer'} className="child-app" />
               <ToTheTop id={'ToTheTop'} className="child-app" />
+              <LightMode id={'LightMode'} className="child-app" func={pull_data} />
             </div>
           }
         />
         <Route
           exact
           path="/thankyou"
-          element={<Thankyou className="container-thankyou" />}
+          element={<Thankyou className={`container-thankyou ${"light-theme"}`} />}
         />
-        <Route path="*" element={<NotFound className="container-404" />} />
+        <Route path="*" element={<NotFound className={``} />} />
       </Routes>
     </BrowserRouter>
   );

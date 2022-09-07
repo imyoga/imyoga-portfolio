@@ -4,7 +4,7 @@ import ScrollLink from './ScrollLink.js';
 
 const ToTheTop = (props) => {
   return (
-    <div className="to-the-top">
+    <div className="container-to-the-top">
       <ScrollLink scrollToTop={1}>
         <div >^</div>
       </ScrollLink>

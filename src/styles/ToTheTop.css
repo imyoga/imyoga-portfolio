@@ -1,6 +1,6 @@
-@import url('./global.css');
+@import url('./App.css');
 
-.to-the-top {
+.container-to-the-top {
   width: 2.5rem;
   height: 2.5rem;
   font-size: 2.3rem;
@@ -22,13 +22,13 @@
   transition: transform 0.5s;
 
 }
-.to-the-top:hover {
+.container-to-the-top:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 
 @media (max-width: 700px) {
-  .to-the-top {
+  .container-to-the-top{
     width: 2rem;
     height: 2rem;
     font-size: 1.8rem;

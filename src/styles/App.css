@@ -1,11 +1,94 @@
-@import url('./global.css');
 
-.container-app {
-  display: block 
+:root{
+  --bg: #1d2025;
+  /* rgba(29,32,37,255) */
+
+  --text: #e6ebf1;
+  /* rgb(230, 235, 241) */
+
+  --accent: #efc9a4;
+  /* rgb(239, 201, 164) */
+
+  --button-bg: #02dac5;
+  --button-text: var(--bg);
+
+  --card-bg: #434b55;
+  --card-text: var(--text);
+
+  --nav-bg: #333b45;
+  --nav-text: var(--text);
+
+  --input-bg: #2e2e2e;
+  --input-text: var(--text);
+
+  --footer-bg: #1f2933;
+  --footer-accent: var(--button-bg);
+
+  --text-shadow-dark: 1px 1px 2px var(--bg);
+  --text-shadow-light: 1px 1px 2px var(--text);
+
+  --linear-gradient-text: linear-gradient(to right, #02dac5, #efc9a4);
+
+  --box-shadow: rgb(29, 32, 37, 0.9) 0px 7px 29px 0px;
+  --box-shadow-accent: rgb(239, 201, 164, 0.9) 0px 7px 29px 0px;
+  --box-shadow-black: rgb(0, 0, 0, 0.9) 0px 7px 29px 0px;
+
+  --bg-gradient: linear-gradient(120deg, #1d2025 0%, #efc9a4 200%);
 }
 
-.container-app > *{
+
+*::selection {
+  color: var(--bg);
+  background-color: var(--text);
+}
+.container-app {
+  color: var(--text);
+  background: var(--bg);  
+  
+  display: block;
+}
+
+.container-app > * {
   /* border: 5px solid red; */
   margin: auto;
 }
 
+:root .light-theme {
+
+  background: var(--bg-light); 
+  --bg: #e6ebf1;
+  --bg-light: #E7FBF9;
+  /* rgba(29,32,37,255) */
+
+  --text: #1d2025;
+  /* rgb(230, 235, 241) */
+
+  --accent: #029889;
+  /* rgb(239, 201, 164) */
+
+  --button-bg: #1d2025;
+  --button-text: var(--bg);
+
+  --card-bg: var(--bg);
+  --card-text: var(--text);
+
+  --nav-bg: var(--bg);
+  --nav-text: var(--text);
+
+  --input-bg: var(--bg);
+  --input-text: var(--text);
+
+  --footer-bg: var(--bg);
+  --footer-accent: var(--button-bg);
+
+  --text-shadow-dark: 1px 1px 2px var(--bg);
+  --text-shadow-light: 1px 1px 2px var(--text);
+
+  --linear-gradient-text: linear-gradient(to right, #02dac5, #1d2025);
+
+  --box-shadow: rgb(29, 32, 37, 0.9) 0px 7px 29px 0px;
+  --box-shadow-accent: rgb(239, 201, 164, 0.9) 0px 7px 29px 0px;
+  --box-shadow-black: rgb(0, 0, 0, 0.9) 0px 7px 29px 0px;
+
+  --bg-gradient: linear-gradient(120deg, #e6ebf1 0%, #02dac5 200%);
+}

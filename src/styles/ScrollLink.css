@@ -1,4 +1,4 @@
-@import url('./global.css');
+@import url('./App.css');
 .active{
     color: var(--accent);
 }
