@@ -29,7 +29,10 @@ function App() {
           exact
           path="/"
           element={
-            <div className={theme ? `container-app ${"light-theme"}` : `container-app`}>
+            <div
+              id="App"
+              className={theme ? `container-app ${'light-theme'}` : `container-app`}
+            >
               <Navbar id={'Navbar'} className="child-app" />
               <Hero id={'Hero'} className="child-app" />
               <Skills id={'Skills'} className="child-app" />
@@ -45,7 +48,7 @@ function App() {
         <Route
           exact
           path="/thankyou"
-          element={<Thankyou className={`container-thankyou ${"light-theme"}`} />}
+          element={<Thankyou className={`container-thankyou ${'light-theme'}`} />}
         />
         <Route path="*" element={<NotFound className={``} />} />
       </Routes>

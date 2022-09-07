@@ -9,7 +9,7 @@
   display: block;
   text-align: center;
   margin-inline: auto;
-  color: var(--text);
+  color: var(--bg);
   font-size: 1.5rem;
 }
 

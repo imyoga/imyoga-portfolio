@@ -19,13 +19,14 @@
   box-shadow: var(--box-shadow-black);
 
 }
-
 .container-hero > div {
   /* background-color: blue; */
   /* border: 1px solid red; */
   display: block;
   text-align: center;
 }
+
+
 
 .hero-titles {
   margin-top:5rem;
@@ -49,11 +50,13 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
 .avatar {
   position: absolute;
   bottom: 2rem;
   order: 1;
 }
+
 
 .hero-background {
   background-color: var(--nav-bg);
@@ -86,7 +89,7 @@
 @keyframes fadeInLeft {
   0% {
     opacity: 0.5;
-    transform: translateX(100vh);
+    transform: translateX(50vw);
   }
   100% {
     opacity: 1;
@@ -95,10 +98,12 @@
 }
 /* Animation Heading Avatar End */
 
+
+
 @media (max-width: 700px) {
-  .container-hero * {
-    /* border: 5px solid yellow;  */
-  }
+  /* .container-hero * {
+    border: 5px solid yellow; 
+  } */
   .container-hero * {
     font-size: 2rem;
   }
@@ -118,5 +123,16 @@
   }
   .avatar {
     scale: 0.75;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0.5;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }

@@ -4,7 +4,7 @@
 .container-footer {
   /* border: 5px solid black; */
   height: 25vh;
-  width: 100vw;
+  width: 100%;
 
   display: flex;
   flex-direction: column;

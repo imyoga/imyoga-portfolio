@@ -4,17 +4,12 @@
   border: 5px solid black;
 } */
 
-*{
+* {
   text-decoration: none;
 }
 .container-navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-
   position: sticky;
-  top: 0;  
+  top: 0;
   z-index: 10;
 
   background: var(--nav-bg);
@@ -24,8 +19,13 @@
   font-size: 1.4rem;
   font-weight: 600;
 
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow-black);
   transition: transform 0.5s;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .burger-icon {
@@ -40,18 +40,14 @@
   justify-content: space-around;
 }
 
-
 .nav-link:hover {
   color: var(--accent);
   cursor: pointer;
 }
-.active{
-  color: var(--accent);
-}
 
 /* Link animation hover  */
 .nav-link {
-  margin-inline:20px;
+  margin-inline: 20px;
   display: inline-block;
   position: relative;
   color: var(--nav-text);
@@ -76,43 +72,38 @@
 }
 /* End */
 
-
-
 /* //////////////////////////////////////////////////////////////////// */
 @media (max-width: 700px) {
-  #modal-navlinks,.container-mobile-nav {
-    z-index: 10;   
+  #modal-navlinks,
+  .container-mobile-nav {
+    z-index: 10;
     
   }
 
   .container-navlinks {
     display: none;
   }
-
-  .burger-icon {
-    display: inline;
-  }
-
-  .container-mobile-nav {    
-    width: 100vw;
-    padding-inline: 20px;    
+  .container-mobile-nav {
+    width: 100%;
+    padding-inline: 1.6rem;
 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-size: 1.8rem;
+    
   }
-
-  .container-mobile-nav:hover {
-    cursor: pointer;
+  .burger-icon {
+    display: inline;
   }
 
   #modal-navlinks {
     position: absolute;
     top: 3.5rem;
-    width: 100vw;
+    width: 100%;
     height: calc(100vh - 3.5rem);
+    padding-top: 20px;
 
     background-color: var(--nav-bg);
     font-size: 1.8rem;
@@ -130,5 +121,6 @@
     padding: 10px;
     align-self: stretch;
     text-align: center;
+    box-shadow: var(--box-shadow-black);
   }
 }

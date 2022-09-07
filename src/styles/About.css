@@ -2,7 +2,7 @@
 
 .container-about-background {
   height: calc(100vh - 3.5rem);
-  width: 100vw;
+  width: 100%;
   /* border: 5px solid black; */
   
   background-image: var(--bg-gradient);
