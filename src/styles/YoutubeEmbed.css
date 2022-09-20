@@ -1,7 +1,7 @@
 @import url('./App.css');
 
 .embed-youtube *{
-    border: 5px solid var(--bg);  
+    border: 5px solid #1d2025;  
     border-radius: 5px;  
 }
 

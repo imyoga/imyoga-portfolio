@@ -16,7 +16,7 @@ import '../styles/App.css';
 function App() {
   const [theme, setTheme] = useState('');
 
-  console.log(theme);
+  // console.log(theme);
 
   const pull_data = (data) => {
     setTheme(data);
