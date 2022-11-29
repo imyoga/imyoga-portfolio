@@ -4,23 +4,6 @@ import '../styles/Projects.css';
 
 let projects = [
   {
-    title: 'Slynk',
-    description: `A plateform for keeping users' all digital identity in one place while it's linked with digital card. Responsive with all media type while providing perfect user experience.`,
-    technologies: [
-      'React',
-      'TypeScript',
-      'Node/Express',
-      'jQuery',
-      'MongoDB',
-      'SCSS',
-      'Bootstrap',
-    ],
-    collobraters: ['Hiren B, Nil S, Harshil T'],
-    note: `The beta vesrsion is currently in production. Hosted on AWS with database in client's server.`,
-    links: ['See Live', 'https://beta.slynk.app/login'],
-    embedId: 'AHZc1VqfW_Y',
-  },
-  {
     title: 'Par Infotech',
     description: `A business website provides an online presence so people can learn about a company, its employees, products, services, and culture. Responsive, accessible and SEO friendly.`,
     technologies: ['React', 'Node/Express'],
