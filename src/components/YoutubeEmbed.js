@@ -12,7 +12,7 @@ const YoutubeEmbed = (props) => (
       allowFullScreen
       title="Embedded youtube"
       className="iframe"
-      srcdoc={`<style>
+      srcDoc={`<style>
         *{padding:0;margin:0;overflow:hidden}
         html,body{height:100%}        
         img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}

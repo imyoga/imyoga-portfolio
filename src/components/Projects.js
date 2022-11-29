@@ -62,7 +62,6 @@ const Projects = (props) => {
       <ProjectBuilder project={projects[1]} />
       <ProjectBuilder project={projects[2]} />
       <ProjectBuilder project={projects[3]} />
-      <ProjectBuilder project={projects[4]} />
     </div>
   );
 };
