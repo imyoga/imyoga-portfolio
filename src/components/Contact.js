@@ -41,7 +41,7 @@ const Form = (props) => {
         </div>
 
         <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_next" value="https://imyoga.net/thankyou" />
+        <input type="hidden" name="_next" value="https://yogesh-m.netlify.app/thankyou" />
         <button type="submit">Send Message</button>
       </form>
     </div>
