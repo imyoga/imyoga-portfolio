@@ -1,2 +1,2 @@
 # Portfolio Website App
-https://www.imyoga.net/
+https://yogesh-m.netlify.app
