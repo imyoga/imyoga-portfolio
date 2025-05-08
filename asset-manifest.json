@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/imyoga-portfolio/static/css/main.0ae51652.css",
-    "main.js": "/imyoga-portfolio/static/js/main.627a769b.js",
+    "main.css": "/imyoga-portfolio/static/css/main.44a7ca9c.css",
+    "main.js": "/imyoga-portfolio/static/js/main.b41ae77a.js",
     "service-worker.js": "/imyoga-portfolio/service-worker.js",
     "static/media/notfound.png": "/imyoga-portfolio/static/media/notfound.faa93c084b59b2faac55.png",
     "static/media/avatar.svg": "/imyoga-portfolio/static/media/avatar.34985fa8d3e6b65ace73b73bd9dd8d27.svg",
@@ -9,7 +9,7 @@
     "index.html": "/imyoga-portfolio/index.html"
   },
   "entrypoints": [
-    "static/css/main.0ae51652.css",
-    "static/js/main.627a769b.js"
+    "static/css/main.44a7ca9c.css",
+    "static/js/main.b41ae77a.js"
   ]
 }
